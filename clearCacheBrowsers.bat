@@ -17,6 +17,6 @@ rd /s /q "%DataDir%"
 for /d %%x in (C:\Users\%USERNAME%\AppData\Roaming\Mozilla\Firefox\Profiles\*) do del /q /s /f %%x\*sqlite
 
 @echo off
-timeout /t 60
+timeout /t 5
 echo -------------------START FIREFOX-------------------
 start firefox.exe javascript:document. http://mothercare.ru 
